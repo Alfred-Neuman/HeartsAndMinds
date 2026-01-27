@@ -369,7 +369,7 @@ if (isServer) then {
     });
     btc_type_ieds = _ieds - ["Land_Garbage_line_F","Land_Garbage_square3_F","Land_Garbage_square5_F", "Land_MarketShelter_F", "Land_ClothShelter_01_F", "Land_ClothShelter_02_F"];
     btc_model_ieds = btc_type_ieds apply {(toLower getText(_cfgVehicles >> _x >> "model")) select [1]};
-    btc_type_blacklist = btc_type_tags + btc_type_flowers + ["UserTexture1m_F"]; publicVariable "btc_type_blacklist";
+    btc_type_blacklist = btc_type_tags + btc_type_flowers + ["ace_tagging_texture1m"]; publicVariable "btc_type_blacklist";
 
     btc_groundWeaponHolder = [];
 
